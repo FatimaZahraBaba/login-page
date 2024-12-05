@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Noto serif';
+    src: url('../fonts/NotoSerifDisplay-VariableFont_wdth,wght.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+.container {
+    padding: 8px;
+    height: 100vh;
+    display: flex;
+    .left-side {
+        width: 50%;
+        background-color: blanchedalmond;
+        height: 100%;
+        padding: 48px;
+        background-size: cover;
+        background: url('/left-side.png');
+        background-size: cover;;
+        color: white;
+        border-radius: 36px;
+        
+        .details-left-side {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .left-side-top {
+                display: flex;
+                align-items: center;
+                width: 314px;
+                height: 26px;
+                p {
+                    margin-right: 20px;
+                    font-size: 16px;
+                    font-family: 'Satoshi';
+                    letter-spacing: 2px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    
+                }
+                hr {
+                    width: 150px;
+                    height: 0px;
+                }
+                
+            }
+            .left-side-bottom {
+                width: 381px;
+                height: 284px;
+                span {
+                    font-family: 'Noto serif';
+                    // font-weight: lighter;
+                    font-size: 72px;
+                    letter-spacing: -4%;
+                    line-height: 72px;
+                    // margin-bottom: 16px;
+                }
+                p {
+                    margin-top: 16px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: 'Satoshi';
+                }
+            }
+        }
+    }
+    .right-side {
+        width: 50%;
+        // background-color: #F5F5F5;
+        height: 100%;
+        padding: 48px 145px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                margin-right: 10px;
+                width: 22px;
+                height: 21.35px;
+            }
+            span {
+                font-size: 22px;
+                font-family: 'Satoshi';
+            }
+        }
+        .middle {
+            font-family: 'Satoshi';
+            // width: 430px;
+            display: flex;
+            flex-direction: column;
+            // background-color: yellowgreen;
+            align-items: center;
+            .middle-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 48px;
+                span {
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2px;
+                    font-family: 'Noto serif';
+                    margin-bottom: 12px;
+                }
+                p {
+                    font-family: 'Satoshi';
+                }
+            }
+            .middle-bottom {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 16px;
+                    font-family: 'Satoshi';
+                    margin-bottom: 8px;
+                }
+                input {
+                    padding: 14px 16px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #F5F7FA;
+                    font-size: 14px;
+                    line-height: 20px;
+                    outline: none;
+                    // margin-bottom: 20px;
+                    &[name="email"] {
+                        margin-bottom: 20px;
+                    }
+                }
+                .div-pass {
+                    background-color: #F5F7FA;
+                    display: flex;
+                    border-radius: 12px;
+                    padding-right: 16px;
+                    margin-bottom: 12px;
+                    input {
+                        width: 100%;
+                        outline: none;
+                        
+                    }
+                } 
+                .div-check {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: #3D3D3D;
+                    margin-bottom: 40px;
+                    // background-color: rgb(207, 207, 204);
+                    .check {
+                        display: flex;
+                        input {
+                            width: 15.75px;
+                            margin: 1.3px 6px 1.3px 1.3px;
+                        }
+                    }
+                    a {
+                        color: #3D3D3D;
+                        text-decoration: none;
+                    }
+                }
+                button {
+                    padding: 12px 16px;
+                    border: none;
+                    border-radius: 12px;
+                    outline: none;
+                    color: white;
+                    background-color: #000000;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 12px;
+                }
+                .sign-google {
+                   padding: 12px 16px;
+                    border: none;
+                    // color: white;
+                    // background-color: #4285F4;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        margin-right: 10px;
+                    }
+                    a {
+                        color: #000000;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+        .botoom {
+            font-family: 'Satoshi';
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+    
+    }
+}

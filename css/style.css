@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto serif";
+  src: url("../fonts/NotoSerifDisplay-VariableFont_wdth,wght.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+.container {
+  padding: 8px;
+  height: 100vh;
+  display: flex;
+}
+.container .left-side {
+  width: 50%;
+  background-color: blanchedalmond;
+  height: 100%;
+  padding: 48px;
+  background-size: cover;
+  background: url("/left-side.png");
+  background-size: cover;
+  color: white;
+  border-radius: 36px;
+}
+.container .left-side .details-left-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .left-side .details-left-side .left-side-top {
+  display: flex;
+  align-items: center;
+  width: 314px;
+  height: 26px;
+}
+.container .left-side .details-left-side .left-side-top p {
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Satoshi";
+  letter-spacing: 2px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.container .left-side .details-left-side .left-side-top hr {
+  width: 150px;
+  height: 0px;
+}
+.container .left-side .details-left-side .left-side-bottom {
+  width: 381px;
+  height: 284px;
+}
+.container .left-side .details-left-side .left-side-bottom span {
+  font-family: "Noto serif";
+  font-size: 72px;
+  letter-spacing: -4%;
+  line-height: 72px;
+}
+.container .left-side .details-left-side .left-side-bottom p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Satoshi";
+}
+.container .right-side {
+  width: 50%;
+  height: 100%;
+  padding: 48px 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .right-side .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .right-side .top img {
+  margin-right: 10px;
+  width: 22px;
+  height: 21.35px;
+}
+.container .right-side .top span {
+  font-size: 22px;
+  font-family: "Satoshi";
+}
+.container .right-side .middle {
+  font-family: "Satoshi";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .right-side .middle .middle-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.container .right-side .middle .middle-top span {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  font-family: "Noto serif";
+  margin-bottom: 12px;
+}
+.container .right-side .middle .middle-top p {
+  font-family: "Satoshi";
+}
+.container .right-side .middle .middle-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .right-side .middle .middle-bottom label {
+  font-size: 16px;
+  font-family: "Satoshi";
+  margin-bottom: 8px;
+}
+.container .right-side .middle .middle-bottom input {
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #F5F7FA;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+}
+.container .right-side .middle .middle-bottom input[name=email] {
+  margin-bottom: 20px;
+}
+.container .right-side .middle .middle-bottom .div-pass {
+  background-color: #F5F7FA;
+  display: flex;
+  border-radius: 12px;
+  padding-right: 16px;
+  margin-bottom: 12px;
+}
+.container .right-side .middle .middle-bottom .div-pass input {
+  width: 100%;
+  outline: none;
+}
+.container .right-side .middle .middle-bottom .div-check {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #3D3D3D;
+  margin-bottom: 40px;
+}
+.container .right-side .middle .middle-bottom .div-check .check {
+  display: flex;
+}
+.container .right-side .middle .middle-bottom .div-check .check input {
+  width: 15.75px;
+  margin: 1.3px 6px 1.3px 1.3px;
+}
+.container .right-side .middle .middle-bottom .div-check a {
+  color: #3D3D3D;
+  text-decoration: none;
+}
+.container .right-side .middle .middle-bottom button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  color: white;
+  background-color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.container .right-side .middle .middle-bottom .sign-google {
+  padding: 12px 16px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .right-side .middle .middle-bottom .sign-google img {
+  margin-right: 10px;
+}
+.container .right-side .middle .middle-bottom .sign-google a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.container .right-side .botoom {
+  font-family: "Satoshi";
+}
+.container .right-side .botoom a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
